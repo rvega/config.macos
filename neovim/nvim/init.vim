@@ -61,10 +61,14 @@ function! InstallPlugins()
   call minpac#add('StanAngeloff/php.vim') "php
 
   call minpac#add('chriskempson/base16-vim')
-  " call minpac#add('jacoborus/tender.vim')
-  " call minpac#add('gruvbox-community/gruvbox')
-  " call minpac#add('rickharris/vim-monokai')
+  call minpac#add('jacoborus/tender.vim')
+  call minpac#add('gruvbox-community/gruvbox')
+  call minpac#add('rickharris/vim-monokai')
+  call minpac#add('lunacookies/vim-colors-xcode')
 
+  " call minpac#add('rktjmp/lush.nvim')
+  " call minpac#add('rockyzhang24/arctic.nvim', { 'branch': 'v2' })
+  " call minpac#add('nvim-treesitter/nvim-treesitter')
 
   " call minpac#add('vim-vdebug/vdebug', {'type': 'opt'}) 
 
@@ -413,7 +417,7 @@ endfunction
 "" Wiki.vim keeps to-do lists, notes, etc.
 "" <leader>ww
 
-let g:wiki_root = '/home/Rafa/wiki'
+let g:wiki_root = '/Users/Rafa/wiki'
 " let g:wiki_link_target_type = 'md'
 let g:wiki_filetypes = ['wiki']
 
@@ -541,6 +545,7 @@ set termguicolors
 syntax enable
 set background=dark
 colorscheme base16-monokai
+" colorscheme xcodedarkhc
 
 " Change colors of the leftmost column (left of linenumbers)
 highlight SignColumn ctermfg=240 ctermbg=0
