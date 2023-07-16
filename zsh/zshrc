@@ -69,6 +69,10 @@ bindkey "ç" fzf-cd-widget
 # Training wheels for <alt>-c
 # alias cd="echo 'Use <alt>-c instead of cd!' && cd "
 
+# clear 
+alias c="clear"
+
+# lf file manager
 alias lf1="=lf"
 alias lf="tmux-load ~/Config/lf/tmux-lf.json"
 
@@ -83,6 +87,9 @@ export CLICOLOR_FORCE=1
 
 # Alias for gnome-open
 # alias open='xdg-open'
+
+# Macos weirdness of open command within tmux.
+alias open='reattach-to-user-namespace open'
 
 # Warning for pip
 # alias pip='echo "use pip with --user flag."'
